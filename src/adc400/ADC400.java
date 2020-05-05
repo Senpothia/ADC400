@@ -26,12 +26,14 @@ import java.util.logging.Logger;
 
 // Interfaçage R/Java
 
+/*
+
 import java.util.Enumeration;
 import org.rosuda.JRI.REXP;
 import org.rosuda.JRI.RVector;
 import org.rosuda.JRI.Rengine;
 
-
+*/
 public class ADC400 extends javax.swing.JFrame implements SerialPortEventListener{
 
     /**
@@ -119,7 +121,7 @@ public class ADC400 extends javax.swing.JFrame implements SerialPortEventListene
     private String Produit, of, Sceance;
     private String Entete="Num;Vs0;Vs0_Volt;Rel2;VsIs;VsIs_Volt;Is;Is_amp;Rel5;VsIs_off;VsIs_off_Volt;Is_off;Is_off_Amp;Rel8";
     private String LigneEnCours;
-    Rengine rengine=new Rengine(new String[]{"--vanilla"},false,null);
+  //  Rengine rengine=new Rengine(new String[]{"--vanilla"},false,null);
     
     public ADC400() {
         initComponents();
@@ -1939,7 +1941,7 @@ public class ADC400 extends javax.swing.JFrame implements SerialPortEventListene
         // TODO add your handling code here:
         
     //Rengine rengine=new Rengine(new String[]{"--vanilla"},false,null);        // TODO add your handling code here:
-    
+    /*
     double [] x =new double[10];
     double [] y=new double[10];
     
@@ -2008,7 +2010,7 @@ public class ADC400 extends javax.swing.JFrame implements SerialPortEventListene
     }
     Graphe_U.setIcon(Plot_U);
    
-       
+       */
     }//GEN-LAST:event_BCalcul_UActionPerformed
 
     private void BCalcul_IActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCalcul_IActionPerformed
@@ -2016,7 +2018,7 @@ public class ADC400 extends javax.swing.JFrame implements SerialPortEventListene
     // TODO add your handling code here:
         
     //Rengine rengine=new Rengine(new String[]{"--vanilla"},false,null);        // TODO add your handling code here:
-    
+    /*
     double [] x =new double[10];
     double [] y=new double[10];
     
@@ -2087,7 +2089,7 @@ public class ADC400 extends javax.swing.JFrame implements SerialPortEventListene
     }
     
     Graphe_I.setIcon(Plot_I);
-   
+   */
        
     }//GEN-LAST:event_BCalcul_IActionPerformed
 
